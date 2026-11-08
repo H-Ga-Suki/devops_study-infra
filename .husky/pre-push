@@ -1,0 +1,5 @@
+if [ -n "$(git status --porcelain)" ]; then
+echo "❌ CẢNH BÁO: Bạn còn thay đổi chưa commit!"
+echo "👉 Vui lòng chạy: git add . && git commit -m 'tin nhắn' trước khi push."
+exit 1
+fi
